@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  <persistence-unit name="WaterTransferEJBPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <class>com.gei.entities.WtAgency</class>
+    <class>com.gei.entities.WtAttachment</class>
+    <class>com.gei.entities.WtFuType</class>
+    <class>com.gei.entities.WtTrans</class>
+    <class>com.gei.entities.WtContact</class>
+    <class>com.gei.entities.WtContactPhone</class>
+    <class>com.gei.entities.AppGroup</class>
+    <class>com.gei.entities.AppPermission</class>
+    <class>com.gei.entities.AppUser</class>
+    <class>com.gei.entities.UserProfile</class>
+    <class>com.gei.entities.WtStatusFlag</class>
+    <class>com.gei.entities.WtCity</class>
+    <class>com.gei.entities.WtCounty</class>
+    <class>com.gei.entities.WtState</class>
+    <class>com.gei.entities.WtAddress</class>
+    <class>com.gei.entities.WtBuyer</class>
+    <class>com.gei.entities.WtCropIdling</class>
+    <class>com.gei.entities.WtGroundwater</class>
+    <class>com.gei.entities.WtLocation</class>
+    <class>com.gei.entities.WtReservoir</class>
+    <class>com.gei.entities.WtStatusTrack</class>
+    <class>com.gei.entities.WtMessage</class>
+    <class>com.gei.entities.WtGwMonthly</class>
+    <class>com.gei.entities.WtWell</class>
+    <class>com.gei.entities.WtChecklist</class>
+    <class>com.gei.entities.UserRegistration</class>
+    <class>com.gei.entities.WtWaterRights</class>
+    <class>com.gei.entities.WtTrackFile</class>
+    <class>com.gei.entities.WtResponse</class>
+    <class>com.gei.entities.WtReviewComment</class>
+    <class>com.gei.entities.WtTransType</class>
+    <class>com.gei.entities.WtAgencyApproval</class>
+    <class>com.gei.entities.WtTransCeqa</class>
+    <class>com.gei.entities.WtTransReach</class>
+    <class>com.gei.entities.WtTransSwrcb</class>
+    <class>com.gei.entities.WtWaterLoss</class>
+    <class>com.gei.entities.WtTransNepa</class>
+    <class>com.gei.entities.WtChangeLog</class>
+    <class>com.gei.entities.WtReviewerComments</class>
+    <class>com.gei.entities.WtTransTrack</class>
+    <class>com.gei.entities.WtAttachmentWithFile</class>
+    <class>com.gei.entities.WtPreTransfer</class>
+    <class>com.gei.entities.WtPurpose</class>
+    <class>com.gei.entities.WtRvTarstor</class>
+    <class>com.gei.entities.WtInternalNote</class>
+    <class>com.gei.entities.WtReviewNote</class>
+    <class>com.gei.entities.WtCiMonthly</class>
+    <class>com.gei.entities.WtCiCroptype</class>
+    <class>com.gei.entities.WtCropType</class>
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
+    <shared-cache-mode>NONE</shared-cache-mode>
+    <properties>
+      <property name="hibernate.dialect" value="org.hibernate.dialect.Oracle10gDialect"/>
+      <property name="hibernate.connection.driver_class" value="oracle.jdbc.OracleDriver"/>
+      <property name="hibernate.show_sql" value="false"/>
+      <property name="hibernate.connection.username" value="wt"/>
+      <property name="hibernate.connection.password" value="wt#95670"/>
+      <property name="hibernate.connection.url" value="jdbc:oracle:thin:@sac1v-yumeidb:1521:testdb"/>
+      <!--<property name="hibernate.connection.url" value="jdbc:oracle:thin:@sac1v-qaqcdb:1521:orcl"/>-->
+      <!--<property name="hibernate.connection.url" value="jdbc:oracle:thin:@localhost:1521:orcl"/>-->
+      <!--<property name="hibernate.connection.url" value="jdbc:oracle:thin:@10.3.120.37:1521:cdecgisdb1.water.ca.gov"/>-->
+      <property name="hibernate.cache.provider_class" value="org.hibernate.cache.NoCacheProvider"/>
+    </properties>
+  </persistence-unit>
+</persistence>
