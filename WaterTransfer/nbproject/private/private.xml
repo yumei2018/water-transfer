@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group name="SGMA AdjudicatedBasin">
+            <file>file:/C:/GEI/trunk/WaterTransfer/web/WEB-INF/resources/js/proposal/Proposal.js</file>
+            <file>file:/C:/GEI/trunk/WaterTransfer/web/WEB-INF/conf/jdbc.properties</file>
+            <file>file:/C:/GEI/trunk/WaterTransfer/web/WEB-INF/jsp/proposal/GroundwaterInfo.jsp</file>
+            <file>file:/C:/GEI/trunk/WaterTransfer/web/WEB-INF/resources/js/proposal/ProposalProcess.js</file>
+            <file>file:/C:/GEI/trunk/WaterTransfer/src/java/com/gei/controller/ProposalController.java</file>
+            <file>file:/C:/GEI/trunk/WaterTransfer/web/WEB-INF/jsp/proposal/ProposalProcess.jsp</file>
+        </group>
+        <group name="WaterTransfer">
+            <file>file:/C:/GEI/trunk/WaterTransfer/web/WEB-INF/jsp/templates/associateWells.jsp</file>
+            <file>file:/C:/GEI/trunk/WaterTransfer/web/WEB-INF/applicationContext.xml</file>
+            <file>file:/C:/GEI/trunk/WaterTransfer/web/WEB-INF/conf/jdbc.properties</file>
+        </group>
+    </open-files>
+</project-private>

@@ -1,0 +1,124 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 9, 2015, 10:45:23 AM
+    Author     : ymei
+*/
+.menu-button{
+    background-color:#013C59;
+    color:#f9f9f9;
+    border: 0px;
+    font-size: 15px;
+    height: 30px;
+}
+.menu-button:hover {
+    background-color: #ffffff;
+    color: #003cb3;
+}
+.menu-button-click {
+    border: 0px;
+    font-size: 15px;
+    background-color: #ffffff;
+    color: #003cb3;
+    height: 30px;
+}
+.menu-button:hover a {
+    color: #003cb3;
+}
+#main-content-wrapper{
+    width:1200px;
+    margin:0 auto;        
+}
+#create-form{
+    top: 20px;
+/*    color: #008000;*/
+/*    width: 1000px;*/
+/*    height: 500px;*/
+    background-color: #AFE8FF;    
+    margin: 0.5em 0;
+    border:none;
+/*    text-align: center;*/
+    padding-left: 80px;
+    padding-bottom: 20px;
+}
+.form-top{
+    color: #039;
+    border: 0px solid #fbad23;
+    font-style: initial;
+    size: 20px;
+    margin: 0;
+/*    padding: 0.5em;*/
+    text-align: center;
+}
+#menu-buttons{
+    text-align: left;
+    padding-top: 20px;
+/*    padding-left: 20px;*/
+}
+#agency-info{
+    background-color: #ffffff;
+    width: 900px;
+    height: 400px;
+    overflow-y: scroll;
+}
+#seller-info{
+    background-color: #ffffff;
+    width: 900px;
+    height: 400px;
+    overflow-y: scroll;
+}
+#buyer-info{
+    background-color: #ffffff;
+    width: 900px;
+    height: 400px;
+    overflow-y: scroll;
+}
+#base-info{
+    background-color: #ffffff;
+    width: 900px;
+    height: 400px;
+    overflow-y: scroll;
+}
+#cropidling-info,#reservoir-info,#groundwater-info,#conserved-info{
+    background-color: #ffffff;
+    width: 900px;
+    height: 400px;
+    overflow-y: scroll;
+}
+.contact-container{
+    font-size: 13px;
+    text-align: left;
+    background-color: #c2d1f0;
+}
+#base-container,#ci-container,#rv-container,#gw-container,#cs-container{
+    font-size: 10px;
+    text-align: right;
+}
+#contact-table th{
+    width: 150px;
+}
+/*table#seller-contact-table{
+    font-size: 10px;
+}*/
+table#buyer-contact-table{
+    font-size: 10px;
+}
+.seller-contact-container{
+    font-size: 10px;
+}
+.buyer-contact-container{
+    font-size: 10px;
+}
+#contact-form-button{    
+    width: 200px;
+    padding-left: 150px;
+}
+/*#saveContact{
+    position: absolute;    
+}*/
+.space{
+    height: 10px;
+}

@@ -1,0 +1,138 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : Mar 23, 2015, 11:52:50 AM
+    Author     : clay
+*/
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active{
+    border-radius:1px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    background: #0d9cc6;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active a{
+    color:#FFF;
+}
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    /*padding: 0.5em 2em;*/
+}
+.ui-widget-header{
+    background: #FFF;
+}
+.ui-tabs-nav{
+    padding: 0px !important;
+    border-radius: 0px;
+    border:none;
+    border-bottom: 3px solid #0d9cc6;
+}
+.ui-tabs .ui-tabs-nav li {
+    border-radius:1px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    background: #d3d3d3;
+}
+
+
+.ui-tabs .ui-tabs-nav li.secondary-dynamic-tabs {
+  background-color: #ebebeb;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active.secondary-dynamic-tabs {
+  background: #0d9cc6;
+}
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right,.ui-corner-left,.ui-corner-top, .ui-corner-br {
+    border-radius: 1px;
+}
+.ui-dialog-titlebar{
+    background:#0d9cc6;
+    color:#FFF;
+    padding: 0px;
+    margin:0px;
+}
+.ui-dialog{
+    padding: 0px !important;
+    margin:0px !important;
+    border:3px solid #0d9cc6;
+    font-size: 10pt;
+}
+.ui-dialog-title{
+    padding:5px;
+}
+.ui-dialog-titlebar{
+    border:none;
+}
+
+.ui-dialog .ui-dialog-buttonpane button {
+  background: #797979;
+    border: 1px solid #797979;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 12px !important;
+    height: 30px;
+}
+
+.ui-dialog .ui-dialog-buttonpane button:hover {
+  background-color: #989898;
+  color: #FFF;
+}
+
+#proposal-tb_length{
+    position: relative;
+    left:45%;
+    top:-28px;
+    /*margin: 18px 0 10px 0;*/
+}
+#proposal-tb_filter{
+    position: relative;
+    top:-30px;
+    /*margin: 18px 0 10px 0;*/
+}
+#proposal-tb{
+    /*border: 3px solid #0c9fc9;*/
+    font-size: 10pt;
+}
+
+#proposal-tb a{
+/*  color: black !important;
+  text-decoration: none !important;*/
+}
+#proposal-tb thead{
+    background-color: #9cc7d4;
+    border-radius: 2px 2px 0 0;
+    cursor: default;
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 20px;
+    padding: 10px;
+}
+#proposal-tb thead th{
+    border:none;
+}
+#proposal-tb tfoot,#proposal-tb_info{
+    display: none;
+}
+
+#proposal-tb .odd {
+  background-color: #EEE;
+}
+
+#proposal-tb tr{
+  text-align: center;
+}
+
+#upload-file-form .ui-dialog .ui-dialog-titlebar{
+    padding: 0.4em 0.5em;
+}
+table.dataTable {
+    border-collapse: collapse;
+}
+.ui-dialog-titlebar-close {
+    width: 2.4em !important;
+}
+.ui-button-text,.ui-button-icon-primary,.ui-icon ui-icon-closethick{
+    cursor:pointer !important;
+}

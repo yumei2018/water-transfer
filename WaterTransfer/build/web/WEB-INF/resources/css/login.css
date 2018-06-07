@@ -1,0 +1,95 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 13, 2016, 9:24:23 AM
+    Author     : aleshchuk
+*/
+
+#welcome-header {
+  color: rgb(0,91,138);
+}
+
+h1,h2,h3,h4 {
+  font-weight: bold;
+}
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+h4 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+#login-subheader {
+  background-image: url('../images/WaterTransfLoginBottom.jpg');
+  background-repeat: no-repeat;
+  background-size: 1080px 205px;
+  width: 1080px;
+  height: 205px;
+  position: relative;
+}
+
+#login-content {
+  display: inline-block;
+/*  width: 660px;*/
+  width: 60%;
+  padding: 50px;
+  text-align: justify;
+  color: #353535;
+}
+
+#loginform-ct {
+  background-color: #ddd;
+  min-height: 310px;
+  width: 260px;
+  padding: 30px;
+}
+
+#loginform-wrapper {
+  display: inline-block;
+  vertical-align: middle;  
+}
+
+.form-title {
+  margin: 0 0 25px 0;
+}
+
+#form-ct {
+  height: 140px;
+}
+
+.loginLink {
+  cursor: pointer;
+  color: #0c83ab;
+  text-decoration: underline;
+  font-size: 12px;
+  padding-top:15px;
+}
+
+.button {
+  //border: rgb(0,91,138) 1px solid;
+  cursor: pointer;
+  display: block;
+  padding: 10px;
+  margin: 10px 0 0 0;
+  width: 90px;
+  border-radius: 2px;
+  background-image: linear-gradient(#0b94c3, #0c83ab 80%);
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid #0c83ab;
+}
+
+.button:hover {
+  background-image: linear-gradient(#0c83ab, #0b94c3 80%);
+}

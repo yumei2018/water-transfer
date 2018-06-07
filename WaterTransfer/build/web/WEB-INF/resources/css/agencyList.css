@@ -1,0 +1,67 @@
+/* 
+    Created on : Nov 29, 2016, 3:58:35 PM
+    Author     : ymei
+*/
+
+#agency-list{
+  width:1000px;
+  top: 20px;
+  height: 450px;
+  margin: 0.5em 0;
+  border:none;
+  padding-left: 40px;
+  padding-bottom: 20px; 
+}
+#agencyTable{
+  border-collapse: collapse;
+  width:100%;
+  border-spacing: 0;
+/*  width:980px;
+  text-align: center;
+  margin-bottom: 10px;*/
+/*  overflow-x: scroll;*/
+}
+#agencyTable thead tr .header{
+	background-image: url(../../resources/images/icons/bg.gif);
+	background-repeat: no-repeat;
+	background-position: right;
+	cursor: pointer;
+}
+#agencyTable thead tr .headerSortUp{
+	background-image: url(../../resources/images/icons/asc.gif);
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+#agencyTable thead tr .headerSortDown{
+  background-image: url(../../resources/images/icons/desc.gif);
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+#agencyTable thead{
+  width:980px;
+  display: block;
+}
+#agencyTable tbody{
+  overflow: auto;
+  height: 300px;
+  display: block;
+}
+.agency_header {
+  background-color: #8cb3d9;
+  font-size: 15px;
+  width: 300px;
+}
+.agency_header tr{
+  width:980px;
+}
+.agency_header th{
+  border: 1px solid #cccccc;
+  padding:10px 0px;
+  background: none repeat scroll 0 0 #e3e3e3;
+  text-align: center;
+}
+#agencyTable td{
+  text-align: center;
+  border:1px solid #cccccc;
+  padding: 3px;
+}

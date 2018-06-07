@@ -1,0 +1,214 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 12, 2014, 9:41:13 PM
+    Author     : ymei
+*/
+
+/*body {
+    background-color:#FFF8F0;
+    color: #000000;
+    font-family: Helvetica, Arial, sans-serif;
+}*/
+
+#create-form{
+    top: 20px;
+    color: #008000;
+    width: 1000px;
+    height: 400px;
+    background-color: #AFE8FF;
+    padding:20px;
+    margin: 0.5em 0;
+    border:none;
+    text-align: center;
+    padding-bottom: 50px;
+}
+#create-contact-table{
+    border: 1px solid;
+    width: 1000px;
+}
+#create-waterrights-table{
+    border: 1px solid;
+    width: 800px;
+}
+
+#create-general-table{
+    border: 1px solid;
+    width: 1000px;
+}
+#create-location-table{
+    border: 1px solid;
+    width: 800px;
+}
+#create-ci-historic-table{
+    border: 1px solid;
+    width: 1000px;
+}
+#create-ci-historic-table th{
+    border: 1px solid;
+}
+#create-gw-historic-table{
+    border: 1px;
+    width: 1000px;
+}
+#create-gw-historic-table th{
+    border: 1px solid;
+}
+#create-rv-historic-table{
+    border: 1px solid;
+    width: 1000px;
+}
+#create-rv-historic-table th{
+    border: 1px solid;
+}
+#search-form{
+    top: 20px;
+    color: #008000;
+/*    width: 100%;*/
+/*    height: 800px;*/
+    background-color: #AFE8FF;
+    padding:20px;
+    margin: 0.5em 0;
+    border:none;
+    text-align: center;
+    padding-bottom: 20px;
+}
+#update-form{
+    top: 20px;
+    color: #008000;
+/*    width: 100%;*/
+    width: 1000px;
+    height: 600px;
+    background-color: #AFE8FF;
+    padding:20px;
+    margin: 0.5em 0;
+    border:none;
+    text-align: center;
+    padding-bottom: 50px;
+}
+#chart-form{
+    top: 10px;
+    background-color: #AFE8FF;
+    padding:20px;
+    margin: 0.5em 0;
+/*    width: 100%;*/
+}
+#attachment-form{
+    background-color: #AFE8FF;
+    width: 1000px;
+    text-align: center;
+}
+#add-attachment{
+    text-align: left;
+}
+.form-top{
+    color: #039;
+    border: 0px solid #fbad23;
+    font-style: initial;
+    size: 20px;
+    margin: 0;
+/*    padding: 0.5em;*/
+    text-align: center;
+}
+.sub-title{
+    text-align: left;
+}
+#title-top{
+    text-align: center;
+    color: #003cb3;
+    font-size: 20pt;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-shadow: 1px 1px #000000;
+}
+#form-button{
+    text-align: center;
+    color: #fbad23;
+    padding-top: 10px;
+}
+#graphcontainer{
+    height: 300px;
+    width: 1000px;
+}
+.hightchart-container{
+    height: 300px;
+    width: 800px;
+}
+.tableRow{
+    text-align: right;
+    color: #005fb3;
+    font-size: 12px;
+}
+table td.rowCell{
+    color: #000000;
+    font-size: 15px;
+    width: 100px;
+}
+table.table_trans_list{
+    font-family: verdana,arial,sans-serif;
+    font-size:10px;
+    color:#333333;
+    border-width: 1px;
+    border-color: #666666;
+    border-collapse: collapse;
+}
+/*table.table_trans_list thead{
+    width: 100%;
+    position: static; 
+    display:block;
+}*/
+/*table.table_trans_list tbody{
+    overflow-y: scroll;
+    height: 300px;
+    width: 100%; 
+    display:block;
+    position: absolute;
+}*/
+table.table_trans_list th{
+    border-width: 1px;
+    padding:0px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #dedede;
+}
+table.table_trans_list td{
+    border-width: 1px;
+    padding: 0px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #ffffff;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+table.table_trans_list td.wtTransId{
+    border-width: 1px;
+    border-style: solid;
+    color: #aa0000;
+    text-decoration: underline;
+    background-color: #ffffff;
+}
+.attach_header {
+    color: #000000;
+    font-size: 15px;
+    width: 300px;
+}
+.attach_row {
+    color: #000000;
+    font-size: 12px;
+    width: 300px;
+}
+.readonlyField {
+    background-color: #cccccc
+}
+#space{
+    height: 20px;
+}
+.text-label{
+    size: 12px;
+    text-align: left;
+    color: #000000;    
+}

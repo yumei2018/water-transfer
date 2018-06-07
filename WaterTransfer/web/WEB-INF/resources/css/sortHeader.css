@@ -1,0 +1,46 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 16, 2014, 9:02:01 AM
+    Author     : ymei
+*/
+
+table.tablesorter {
+    background-color: #cdcdcd;
+    font-family: arial;
+    font-size: 8pt;
+    text-align: left;
+}
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+    background-color: #e6eeee;
+    border: 1px solid #666666;
+    font-size: 8pt;
+    padding: 4px;
+}
+table.tablesorter thead tr .header {
+/*    background-image: url("bg.gif");*/
+    background-position: right center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+table.tablesorter tbody td {
+    background-color: #fff;
+    color: #3d3d3d;
+    padding: 4px;
+    vertical-align: top;
+}
+table.tablesorter tbody tr.odd td {
+    background-color: #f0f0f6;
+}
+table.tablesorter thead tr .headerSortUp {
+/*    background-image: url("asc.gif");*/
+}
+table.tablesorter thead tr .headerSortDown {
+/*    background-image: url("desc.gif");*/
+}
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+    background-color: #8dbdd8;
+}

@@ -1,0 +1,272 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : Mar 24, 2015, 2:05:50 PM
+    Author     : pheng
+*/
+
+/*#########################PROPOSAL TAB###################################*/
+
+#tabs{
+    border: none;
+    border: 0px solid #0c83ab;
+
+}
+.header_tab{
+   /*background-image: -moz-linear-gradient(top,  #0c9fc9 , #0c83ab 80%); /* FF3.6+ */
+   /* background-image: -webkit-gradient(linear, left top, left bottom, color-stop(#0c9fc9), color-stop(80%,#0c83ab)); /* Chrome,Safari4+ */
+   /* background-image: -webkit-linear-gradient(top,  #0c9fc9 ,#0c83ab 80%); /* Chrome10+,Safari5.1+ */
+   /* background-image: -o-linear-gradient(top,  #0c9fc9 ,#0c83ab 80%); /* Opera 11.10+ */
+   /* background-image: -ms-linear-gradient(top,  #0c9fc9 ,#0c83ab 80%); /* IE10+ */
+   /* background-image:linear-gradient(#0c9fc9,#0c83ab 80%); /* OTHER */
+   /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c9fc9', endColorstr='#0c83ab',GradientType=0 );/* IE6-9 */
+    background-color: #fff;
+    height: 40px;
+    color:#005b8a;
+    line-height: 40px;
+    padding-left: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*#######################AGENCY CONTACT TABLE ############################*/
+.hidden{
+    display: none;
+}
+.accordion h2 span.title {
+    margin-right: 10px;
+    margin-left: 0px;
+}
+.accordion{
+    margin-top:10px;
+}
+.accordion h2 img.remove_icon_ct {
+    position: relative;
+    margin-top: 3px;
+    left:97%;
+    opacity: 0.5
+}
+.accordion h2 img.remove_icon_ct:hover {
+    opacity: 1;
+    cursor:pointer;
+}
+.accordion h2 img.edit_icon{
+    opacity:0.5;
+    padding-left:8px;
+    cursor:pointer;
+}
+.accordion h2 img.edit_icon:hover{
+    opacity: 1;
+}
+.agencyContactList
+{
+    border-collapse: collapse;
+    border:1px solid #cccccc;
+    margin-top:10px;
+    margin-bottom:10px;
+    width:100%;
+}
+.agencyContactList th{
+    background:#E3E3E3;
+    font-size: 12px!important;
+}
+.agencyContactList tr{
+    border:1px solid #cccccc;
+}
+.agencyContactList tr:nth-child(2n+3) {
+    /*background: #BDCDD5;*/
+}
+.agencyContactList td{
+    color:#666666;
+}
+.agencyContactList th,.agencyContactList td{
+    padding:5px 10px 5px 10px;
+    text-align: left;
+    border:1px solid #cccccc;
+}
+.edit_contact, .delete_contact{
+    opacity: 0.5;
+}
+.edit_contact:hover, .delete_contact:hover{
+    cursor:pointer;
+    opacity: 1;
+}
+.inline
+{
+    display:inline-block;
+    vertical-align: bottom;
+}
+.contact_button:hover,.add_agency:hover,.add_storage:hover{
+    background-color: #989898;
+    color:#FFFFFF;
+}
+.contact_button{
+    /*background:url(../images/icons/application_edit.png) no-repeat 10px center;*/
+    margin:0px 0px 20px 10px;
+    background-color: #797979;
+    color:#fff;
+    font-size:12px !important;
+    border:1px solid #797979;
+    border-radius: 2px;
+    height: 30px;
+    /*padding-left: 30px;*/
+}
+.add_agency,.add_storage{
+    background-color: #797979;
+    color:#fff;
+    font-size:12px !important;
+    border:1px solid #797979;
+    border-radius: 2px;
+    margin-top: 20px;
+    height:30px;
+}
+.contact_button,.add_agency,.percent,.remove_avail_contact,.add_storage{
+    cursor: pointer;
+}
+.contact_panel h2{
+    color:red;
+    margin: 10px 0px 5px 0px;
+}
+.contact_panel{
+    font-size: 14px;
+    //margin: 10px;
+}
+.percent{
+    color:#005681;
+    width:60px;
+    height:18px;
+    padding:0px !important;
+    cursor:text;
+}
+.expand_arrow{
+    margin:3px 35px 0 0;
+    right: 50px;
+    float: right;
+    vertical-align: bottom;
+}
+.headerCt{
+   // border:1px solid #CCCCCC;
+    padding:10px 0px;
+    border-radius: 3px 3px 0px 0px;
+    margin-top:20px;
+    background-color: #E3E3E3;
+    font-size: 16px;
+    //box-shadow: 2px 2px 5px #F0F0F0;
+}
+.headerCt h2 {
+    font-size: 16px;
+}
+.headerCt:hover{
+    background-color:#86c0d1;
+}
+.isExpand{
+    background-color: #9cc7d4;
+}
+.contact_panel{
+    // border:1px solid #CCCCCC;
+     padding: 10px 0px 0px 0px!important;
+     border-radius: 0px 0px 3px 3px;
+     box-shadow: none!important;
+}
+span:hover{
+    cursor:default;
+}
+
+#contact-table td{
+    padding: 3px 20px;
+}
+#agency_contact_ct div{
+    float:left;
+}
+#agency_contact_ct > div{
+    padding:5px;
+}
+#agency_contact_ct  > div >div{
+    padding-right:10px;
+}
+#agency_contact_ct label{
+    color:#666666;
+}
+.button_ct{
+    padding:10px;
+    overflow:hidden
+}
+.asterisk {
+    color: red;
+    font-weight: bold;
+}
+#create-form label.error{
+    color: #FB3A3A;
+    /*display: inline-block;*/
+    font-size: 10px;
+}
+.error {
+    margin-top: -5px!important;
+}
+.Inactive{
+    background: #eeeeee;
+}
+
+.downloadImg {
+  text-decoration: none;
+}
+/*######################## Override ###########################*/
+.ui-accordion .ui-accordion-header{
+    cursor:default;
+}
+
+
+/*########################Proposal Form################################*/
+.isValid{
+    /*border:1px solid red !important;*/
+    box-shadow: 0 0 2px red;
+}
+#reviewProposal,.request_btn{
+    float:left !important;
+    margin-right: 5px;
+}
+.proposal_btn{
+    border:none;
+    width:100px;
+    border-radius: 1px;
+    color:#FFF;
+    line-height: 30px;
+    float:right;
+    margin-left: 5px;
+    background-image: -moz-linear-gradient(top,  #0B94C3 , #0c83ab 80%); /* FF3.6+ */
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(#0B94C3), color-stop(80%,#0c83ab)); /* Chrome,Safari4+ */
+    background-image: -webkit-linear-gradient(top,  #0B94C3 ,#0c83ab 80%); /* Chrome10+,Safari5.1+ */
+    background-image: -o-linear-gradient(top,  #0B94C3 ,#0c83ab 80%); /* Opera 11.10+ */
+    background-image: -ms-linear-gradient(top,  #0B94C3 ,#0c83ab 80%); /* IE10+ */
+    background-image:linear-gradient(#0B94C3,#0c83ab 80%); /* OTHER */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0B94C3', endColorstr='#0c83ab',GradientType=0 );/* IE6-9 */
+}
+.proposal_btn:hover{
+    background: #0C83AB;
+    cursor: pointer;
+}
+
+
+/*###########################Proposal Table Grid########################*/
+#proposal-tb_wrapper{
+  /*top: 40px;*/
+}
+.year_filter {
+  margin: 8px 0 10px 0;
+  font-size: 10pt;
+}
+.entries_filter{
+  margin-left: 100px;
+}
+.entries_filter, .year_filter{
+  display: inline-block;
+}
+.entries_filter select{
+  width:50px;
+}
+.img-rotate{
+    opacity: 0.4;
+}

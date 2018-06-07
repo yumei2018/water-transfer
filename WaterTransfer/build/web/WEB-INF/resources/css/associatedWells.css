@@ -1,0 +1,156 @@
+#associateWellCt{
+        border-collapse: collapse;
+        border-spacing: 0;
+        width:100%;
+    }
+    #associateWellCt thead tr .header{
+	background-image: url(../../resources/images/icons/bg.gif);
+	background-repeat: no-repeat;
+	background-position: right;
+	cursor: pointer;
+    }
+    #associateWellCt thead tr .headerSortUp{
+	background-image: url(../../resources/images/icons/asc.gif);
+        background-repeat: no-repeat;
+        background-position: center right;
+    }
+    #associateWellCt thead tr .headerSortDown{
+	background-image: url(../../resources/images/icons/desc.gif);
+        background-repeat: no-repeat;
+        background-position: center right;
+    }
+    #associateWellCt thead th{
+        background:#E3E3E3;
+        padding:10px;
+    }
+    #associateWellCt th,#associateWellCt td,#attachmentCt th,#attachmentCt td{
+        border:1px solid #CCCCCC;
+        padding:3px;
+        text-align: center;
+        font-size: 15px;
+    }
+    #attachmentCt{
+        width:100%;
+        margin-bottom: 20px;
+    }
+    #attachmentCt th{
+        background-color: #9cc7d4;
+        /*color:white;*/
+        padding: 10px;
+    }
+
+    #checkListCt th{
+        text-align:left;
+    }
+    #checkListCt th,#checkListCt td{
+        padding:3px;
+        font-size: 15px;
+    }
+    #checkListCt th{
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    .wellButtonsCt{
+        overflow: hidden;
+        clear:both;
+    }
+
+    .editWells,.removeWells,.editAttach,.removeAttach{
+        cursor:pointer;
+    }
+    .non-editable-row input {
+      border: none !important;
+      background-color: transparent;
+      width: 138px;
+      float: right;
+    }
+    .non-editable-row span {
+      display: inline-block;
+      width: 280px;
+    }
+
+    #wellListCt input{
+        border: 1px solid #a6a8a8;
+    }
+/*    #wellListCt input.non_border{
+        border:none !important;
+    }
+    #wellListCt input.non_border:focus{
+        box-shadow: none !important;
+    }*/
+    #wellListCt span + input{
+        margin-right: 8px;
+    }
+    #associated_well_iframe{
+        height: auto;
+        width: inherit !important;
+        min-width: 970px;
+        padding: 0px !important;
+        border:none !important;
+    }
+    .expandBtn{
+        position: absolute;
+        top: 50%;
+        right: 3.4em;
+        margin: -10px 0 0;
+        cursor:pointer !important;
+        width:50px;
+        height: 20px;
+    }
+    .expandBtn span{
+        text-align: center;
+        margin: 0px auto;
+        cursor:pointer !important;
+        opacity: .5;
+    }
+    .expandBtn:hover{
+        background: #dadada;
+        border: 1px solid #999999;
+        font-weight: normal;
+    }
+    .expandBtn:hover span{
+        opacity: 1;
+    }
+    #checkListCt tbody tr:nth-child(2n+1)
+    {
+        background-color:#EEEEEE;
+    }
+    .newWellsAdded{
+        background-color:palegreen;
+    }
+    .stationNum span:hover{
+        color:blue;
+    }
+    .stationNum span{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    div.well_mask{
+        position:absolute;
+        background:black;
+        left:0;
+        top:0;
+        opacity:0.2;
+    }
+    .associateWellMapCt {
+      /*float: left;*/
+      margin:0 0 0 10px;
+    }
+    #well-info-left {
+
+      vertical-align: top;
+      display: inline-block;
+      width: 67%;
+    }
+    #well-info-right {
+      vertical-align: top;
+      display: inline-block;
+      width: 32%;
+    }
+    #well-info-ct {
+      background-color: #EEEEEE;
+      overflow:hidden;
+    }
+    .tooltipIcon{
+      cursor:pointer;
+    }

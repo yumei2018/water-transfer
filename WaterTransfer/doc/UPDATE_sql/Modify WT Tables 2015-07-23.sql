@@ -1,0 +1,23 @@
+
+--------------------------------------------------------------------------------
+--  Delete/Add Columns to table USER_REGISTRATION
+--------------------------------------------------------------------------------
+--ALTER TABLE USER_REGISTRATION DROP COLUMN USERNAME;
+--ALTER TABLE USER_REGISTRATION DROP COLUMN PASSWORD;
+--ALTER TABLE USER_REGISTRATION DROP COLUMN ACTIVE;
+ALTER TABLE USER_REGISTRATION DROP COLUMN IS_ACTIVE;
+--ALTER TABLE USER_REGISTRATION DROP COLUMN WT_CONTACT_ID;
+
+ALTER TABLE USER_REGISTRATION ADD IS_REGISTERED NUMBER(1,0) DEFAULT 0;
+--ALTER TABLE USER_REGISTRATION ADD IS_ACTIVE NUMBER(1,0) DEFAULT 1;
+/
+
+--------------------------------------------------------------------------------
+--  Add Columns to table WT_WELL
+--------------------------------------------------------------------------------
+
+ALTER TABLE WT_WELL ADD METER_UNITS VARCHAR2(8);
+ALTER TABLE WT_WELL RENAME COLUMN WELL_MAKE TO METER_MAKE;
+ALTER TABLE WT_WELL RENAME COLUMN WELL_MODEL TO METER_MODEL;
+ALTER TABLE WT_WELL RENAME COLUMN GW_CAPACITY TO WELL_CAPACITY;
+/

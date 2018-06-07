@@ -1,0 +1,113 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 3, 2015, 2:39:57 PM
+    Author     : ymei
+*/
+
+#create-contact-form{
+    top: 10px;
+    color: #008000;
+    width: 800px;
+    height: 400px;
+    background-color: #AFE8FF;
+    padding:20px;
+    margin: 0.5em 0;
+    border:none;
+    text-align: center;
+    padding-bottom: 50px;
+}
+#create-account-form{
+    top: 10px;
+    color: #008000;
+    width: 600px;
+    height: 400px;
+    background-color: #AFE8FF;
+    padding:20px;
+    margin: 0.5em 0;
+    border:none;
+    text-align: center;
+    padding-bottom: 50px;
+}
+#search-contact-form{
+    top: 10px;
+    color: #008000;
+    width: 1000px;
+    height: 300px;
+    background-color: #AFE8FF;
+    padding:20px;
+/*    margin: 0.5em 0;
+    border:none;
+    text-align: center;
+    padding-bottom: 50px;*/
+}
+#search-account-form{
+    top: 10px;
+    color: #008000;
+    width: 600px;
+    height: 300px;
+    background-color: #AFE8FF;
+    padding:20px;
+    margin: 0.5em 0;
+    border:none;
+    text-align: center;
+    padding-bottom: 50px;
+}
+table#searchContactTable { 
+    height:300px; 
+    width: 1000px;
+    overflow-y:scroll; 
+    display:block; 
+}
+/*table#searchContactTable td { 
+    width: 125px;
+}*/
+table#searchAccountTable { 
+    height:300px; 
+    width: 600px;
+    overflow-y:scroll; 
+    display:block; 
+}
+table#searchAccountTable td { 
+    width: 200px;
+}
+.space{
+    height: 40px;
+}
+.admin-nav-btn{
+    width: 160px;
+    text-align:right;
+}
+.admin-nav-btn > *:hover
+{
+    background-color:#443cb3;
+    color:#f9f9f9;
+}
+.selected-group-container{
+    width: 300px;
+    height: 150px;
+    background-color: #f9f9f9;
+    border: 1px solid #006dcc;
+    overflow: auto;
+}
+.groupList{
+    width: 300px; 
+}
+.groupPermission{
+    width: 300px;
+    height: 150px;   
+}
+.permissionList{
+    width: 300px;
+    height: 150px;   
+}
+.add-remove-button{
+    width: 100px;
+}
+
+
+
+

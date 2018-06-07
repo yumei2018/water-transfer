@@ -1,0 +1,136 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : Jul 14, 2015, 10:01:09 AM
+    Author     : pheng
+*/
+
+* {font-family: Arial,"Trebuchet MS",Helvetica,sans-serif !important;}
+#review-gw {
+  width:10.5in;
+  margin:0 auto;
+  padding: 20px;
+  box-shadow: 0 0 5px #444;
+  /*position:relative;*/
+  background-color: white;
+}
+h1 {
+  color: #0178a3;
+  font-size:36px;
+}
+.section .header {
+  color:#000000;
+  font-size:24px;
+  margin-top:20px;
+  margin-bottom:15px;
+}
+.content {
+  margin-bottom:15px;
+}
+.content label {
+  font-weight:bold;
+  margin-bottom:10px;
+}
+.content label,.content span {
+  display:block;
+}
+/*.content span {
+  width: 250px;
+}*/
+table{
+    width:100%;
+}
+table th{
+    border: 1px solid #cccccc;
+    padding:10px 0px;
+    width: 60px;
+    text-align: center;
+    background: none repeat scroll 0 0 #e3e3e3;
+}
+table td{
+  text-align: left;
+  border:1px solid #cccccc;
+  padding: 3px;
+}
+#gw-monthly-table{
+  /*width:900px;*/
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+#gw-monthly-table th{
+  border: 1px solid #cccccc;
+  padding:10px 0px;
+  background: none repeat scroll 0 0 #e3e3e3;
+  text-align: center;
+}
+#gw-monthly-table td input{
+  width:50px;
+}
+#attachment-table{
+  width:100%px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#attachment-table th{
+  border: 1px solid #cccccc;
+  padding:10px 0px;
+  background: none repeat scroll 0 0 #e3e3e3;
+  text-align: center;
+}
+#checklist-table{
+  width: 100%;
+}
+#checklist-table th{
+  border:0px solid #cccccc;
+}
+#checklist-table td{
+  text-align: left;
+  border:0px solid #cccccc;
+  padding: 3px;
+  font-size: 15px;
+}
+.underline{
+  text-decoration: underline;
+}
+.associated_wells{
+    width:900px;
+}
+.associated_wells thead th{
+    background-color:#4F81BD;
+    color:white;
+    text-align: center;
+}
+.pdfBtn{
+    background-color: #ffffff;
+    border: 1px solid #666666;
+    border-radius: 3px;
+    color: #00517a;
+    font-size: 12pt !important;
+    float:right;
+}
+.pdfBtn:hover{
+    background-color: #0B94C3;
+    color: white;
+}
+.hidden{
+   display: none;
+}
+
+/*#############################full Report Preview#####################################*/
+#report_review_ct{
+    background-color: white;
+    box-shadow: 0 0 5px #444;
+    margin: 0 auto;
+    padding: 20px;
+    width: 10.5in;
+}
+ul{
+    list-style-type: none;
+}
+ul li{
+    display: inline-block;
+}

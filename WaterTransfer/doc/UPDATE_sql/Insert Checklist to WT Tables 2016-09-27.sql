@@ -1,0 +1,124 @@
+
+--------------------------------------------------------------------------------
+--  Insert for Table WT_CHECKLIST
+--------------------------------------------------------------------------------
+--
+select WT_CHECKLIST_PKSEQ.nextval from WT_CHECKLIST;
+SELECT * FROM WT_CHECKLIST;
+TRUNCATE TABLE WT_ATT_CHECKLIST; 
+DELETE FROM WT_CHECKLIST;
+--TRUNCATE TABLE WT_CHECKLIST;
+
+SET DEFINE OFF;
+BEGIN
+  reset_seq('WT_CHECKLIST_PKSEQ');
+END;
+/
+
+-- Insert BI_ATTACHMENT Checklist
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (1,'BI_ATTACHMENT','Buyer/Seller Agreement','CHECKBOX',1,0,0,'Also known as Purchase Agreement');
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (2,'BI_ATTACHMENT','Proposal Report','CHECKBOX',2,0,0,'Refer to Section 1.4 White Paper');
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (3,'BI_ATTACHMENT','SWRCB Order','CHECKBOX',3,0,0,'Petition for Change with SWRCB (Refer to Section 1.5 White Paper)');
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (4,'BI_ATTACHMENT','CEQA Documents','CHECKBOX',4,0,0,'Refer to Section 1.5 White Paper');
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (5,'BI_ATTACHMENT','NEPA Documents','CHECKBOX',5,0,0,'Refer to Section 1.5 White Paper');
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (6,'BI_ATTACHMENT','Compliance with CEQA/SWRCB Approval','CHECKBOX',6,0,0,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (7,'BI_ATTACHMENT','Economic analysis of potential impacts to area from which water will be transferred (Water Code Section 1810(d))','CHECKBOX',7,0,0,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (8,'BI_ATTACHMENT','Additional Information','CHECKBOX',8,0,0,null);
+
+-- Insert CI_ATTACHMENT Checklist
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (9,'CI_ATTACHMENT','Field Data Entry Form','CHECKBOX',1,0,0,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (10,'CI_ATTACHMENT','Historic Data','CHECKBOX',2,0,0,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (11,'CI_ATTACHMENT','Grower Sign-up list (Either Word document or Excel spreadsheet)','CHECKBOX',3,0,0,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (12,'CI_ATTACHMENT','Mitigation Plan','CHECKBOX',4,0,0,null);
+
+-- Insert CI__MAP_ATTACHMENT Checklist
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (14,'CI_MAP_ATTACHMENT','Agency boundary','CHECKBOX',1,0,0,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (15,'CI_MAP_ATTACHMENT','Field boundaries','CHECKBOX',2,0,0,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (16,'CI_MAP_ATTACHMENT','Field identification numbers','CHECKBOX',3,0,0,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (17,'CI_MAP_ATTACHMENT','Fields to be idled as part of water transfer','CHECKBOX',4,0,0,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (18,'CI_MAP_ATTACHMENT','Fields to have crop shift as part of water transfer','CHECKBOX',5,0,0,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (19,'CI_MAP_ATTACHMENT','Areas known to have high seepage','CHECKBOX',6,0,0,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (20,'CI_MAP_ATTACHMENT','Areas adjacent to wildlife refuges or areas managed for habitat','CHECKBOX',7,0,0,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (21,'CI_MAP_ATTACHMENT','Portion of any fields dedicated to non-cropping purposes such as equipment storage','CHECKBOX',8,0,0,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (22,'CI_MAP_ATTACHMENT','Fields currently irrigated','CHECKBOX',9,0,0,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (23,'CI_MAP_ATTACHMENT','Fields routinely irrigated','CHECKBOX',10,0,0,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (24,'CI_MAP_ATTACHMENT','Routinely not irrigated','CHECKBOX',11,0,0,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (13,'CI_MAP_ATTACHMENT','Map of current year FSA acreage of each field','CHECKBOX',12,0,0,'FSA');
+
+-- Insert RV_ATTACHMENT Checklist
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (25,'RV_ATTACHMENT','Map','CHECKBOX',1,0,0,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (26,'RV_ATTACHMENT','5-Year Reservoir Operations data spreadsheet','CHECKBOX',2,0,0,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (27,'RV_ATTACHMENT','Operational obligations of reservoir','CHECKBOX',3,0,0,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (28,'RV_ATTACHMENT','Regulatory obligations of reservoir','CHECKBOX',4,0,0,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (29,'RV_ATTACHMENT','All instream flow requirements downstream of the reservoir','CHECKBOX',5,0,0,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (30,'RV_ATTACHMENT','Flood Control Diagram','CHECKBOX',6,0,0,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (31,'RV_ATTACHMENT','Reservoir Area-Capacity curve','CHECKBOX',7,0,0,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (32,'RV_ATTACHMENT','Reservoir flow diagram  or flow chart','CHECKBOX',8,0,0,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (33,'RV_ATTACHMENT','Optional GIS shapefile','CHECKBOX',9,0,0,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (34,'RV_ATTACHMENT','Mitigation Plan','CHECKBOX',10,0,0,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (35,'RV_ATTACHMENT','Refill accounting procedure/spreadsheet','CHECKBOX',11,0,0,null);
+
+-- Insert GW_ATTACHMENT Checklist
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (36,'GW_ATTACHMENT','Ordinance Requirements (if applicable)','CHECKBOX',1,0,0,'Provide records confirming compliance with local ordinances related to groundwater substitution water transfers, as described in Section 3-1 of the White Paper.');
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (37,'GW_ATTACHMENT','Justification of streamflow depletion factor if less than 13% (if applicable)','CHECKBOX',2,0,0,'If streamflow depletion factor (SDF) is less than 13%, provide site-specific technical analysis supporting the proposed SDF.');
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (38,'GW_ATTACHMENT','Monitoring Network Map','CHECKBOX',3,0,0,'Provide a scaled map that displays the location of all proposed transfer wells,  monitoring wells, and non-transfer (third party) wells (labeled by type and well ID) in the vicinity of the transfer wells and the location of all surface water features within two miles of the district or transfer project service area boundary.');
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (39,'GW_ATTACHMENT','Baseline Information/Historic Operations','CHECKBOX',4,0,0,'Please provide operation records indicating the volume of water pumped from each participating transfer well during the three previous non-transfer years prior to the proposed transfer. Totalizing flow meter records are preferred; however, records of power consumption along with a well pump efficiency test (conducted within the last two years) may be submitted in place of flow meter records.');
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (40,'GW_ATTACHMENT','Proposed Operations','CHECKBOX',5,0,0,'Provide a description of the wells’ projected operations (e.g., is groundwater to be applied to surrounding land, or is groundwater to be pumped into district canals) and the projected beneficial use of pumped groundwater.');
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (41,'GW_ATTACHMENT','Groundwater Monitoring Program','CHECKBOX',6,0,0,'Provide the groundwater pumping, monitoring, and reporting plan. Plan should include a description of the monitoring well network, frequency of data collection and reporting for pumping, groundwater level, and groundwater quality measurements. Please refer to Section 3.5 of the White Paper for specific requirements.');
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (42,'GW_ATTACHMENT','Land Subsidence Monitoring Program (if applicable)','CHECKBOX',7,0,0,'Please indicate whether the water transfer monitoring plan will follow the subsidence monitoring requirements of the Long-Term Water Transfers EIS/EIR (EIR). If the subsidence monitoring plan differs from the EIR, please provide details of the alternative subsidence monitoring plan.');
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (43,'GW_ATTACHMENT','Coordination Plan','CHECKBOX',8,0,0,'Identify a point of contact (POC) for the water transfer project. POC should be responsible for communication with the well operators and other decision makers, and for the monitoring and reporting of transfer-related data to the Project Agencies. Also describe how the transfer proponents have coordinated their monitoring efforts with other local groundwater monitoring programs.');
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (44,'GW_ATTACHMENT','Mitigation Plan','CHECKBOX',9,0,0,'Provide a mitigation plan as described in Section 3.6 of the White Paper.');
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (45,'GW_ATTACHMENT','Additional Information','CHECKBOX',10,0,0,'Provide any additional information applicable to this water transfer project here. This can include voluntary information, or information requested by the Project Agencies that does not belong in the above categories.');
+
+-- Insert WELL_ATTACHMENT Checklist
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (46,'WELL_ATTACHMENT','Well Completion Report','CHECKBOX',1,1,1,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (47,'WELL_ATTACHMENT','Well Construction','CHECKBOX',2,1,1,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (48,'WELL_ATTACHMENT','Geologic Log','CHECKBOX',3,1,1,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (49,'WELL_ATTACHMENT','Photo(s) of well site','CHECKBOX',4,1,1,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (50,'WELL_ATTACHMENT','Photo of meter','CHECKBOX',5,1,0,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (51,'WELL_ATTACHMENT','Meter Certification','CHECKBOX',6,1,0,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (52,'WELL_ATTACHMENT','Additional Information','CHECKBOX',7,1,1,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (53,'WELL_ATTACHMENT','March Readings','CHECKBOX',8,0,0,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (54,'WELL_ATTACHMENT','Monitoring Network','CHECKBOX',9,0,0,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (55,'WELL_ATTACHMENT','Meter readings','CHECKBOX',10,0,0,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (56,'WELL_ATTACHMENT','Groundwater level measurements','CHECKBOX',11,0,0,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (57,'WELL_ATTACHMENT','Groundwater quality monitoring','CHECKBOX',12,0,0,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (58,'WELL_ATTACHMENT','Data evaluation and reporting','CHECKBOX',13,0,0,null);
+
+-- Insert TR_ATTACHMENT Checklist
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (59,'TR_ATTACHMENT','Crop Idling Comments Box','CHECKBOX',1,0,0,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (60,'TR_ATTACHMENT','Crop Idling Field visit reports','CHECKBOX',2,0,0,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (61,'TR_ATTACHMENT','Crop Idling Water Purchase Program Results','CHECKBOX',3,0,0,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (62,'TR_ATTACHMENT','Draft Map of landowner and acres','CHECKBOX',4,0,0,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (63,'TR_ATTACHMENT','Excessive Vegetation Documentation','CHECKBOX',5,0,0,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (64,'TR_ATTACHMENT','Final Map of landowners and acres','CHECKBOX',6,0,0,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (65,'TR_ATTACHMENT','Growers Sign-Up List','CHECKBOX',7,0,0,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (66,'TR_ATTACHMENT','Monitoring Photographs','CHECKBOX',8,0,0,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (67,'TR_ATTACHMENT','Verification of Idled Acreage','CHECKBOX',9,0,0,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (68,'TR_ATTACHMENT','Groundwater Comments Box','CHECKBOX',10,0,0,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (69,'TR_ATTACHMENT','Groundwater field visit reports','CHECKBOX',11,0,0,null);
+Insert into WT_CHECKLIST (WT_CHECKLIST_ID,CHECKLIST_FIELD,NAME,CHECKLIST_TYPE,SORT_ORDER,WELL_TRANSFER,WELL_MONITORING,DETAIL) values (70,'TR_ATTACHMENT','Groundwater monitoring records (where DWR monitoring wells are used)','CHECKBOX',12,0,0,null);
+
+/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,227 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : Apr 3, 2015, 4:07:48 PM
+    Author     : ymei
+*/
+li {
+    line-height: 30px;
+}
+
+#create-form{
+    top: 20px;
+    margin: 0.5em 0;
+    border: none;
+/*    padding-left: 80px;*/
+    padding-bottom: 20px;
+}
+.create-base-table,#create-ci-table,#create-rv-table,#create-gw-table,#create-cs-table,#create-ot-table,#proposal-process-table{
+    text-align: left;
+/*    border: 1px solid;*/
+}
+.sub-title{
+    font-size: 20px;
+    text-align: left;
+    padding-bottom: 20px;
+}
+textarea {
+    vertical-align: top;
+}​
+.asterisk {
+    color: red;
+    font-weight: bold;
+}
+#create-rv-table tr td, #create-ci-table tr td, #create-gw-table tr td, #create-cs-table, #create-ot-table,#proposal-process-table tr td{
+    padding-bottom: 15px;
+    padding-right: 10px;
+}
+
+/*##############################Current Template style #######################################*/
+.create-base-table th,#create-rv-table th,#create-ci-table th, #create-gw-table th,#create-cs-table th,#create-ot-table,#proposal-process-table td{
+    font-size: 10pt;
+    font-weight: bold;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    //padding-left:8px;
+}
+#typeMenu label{
+     font-size: 10pt;
+}
+input:not(.add_agency):not(.contact_button):focus
+,textarea:focus
+,select:focus{
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 5px #0B94C3;
+}
+#create-rv-table input
+,.create-base-table tr td input
+,.create-base-table tr textarea
+,.fieldgroup .fieldValue
+,#create-rv-table tr textarea
+,#create-ci-table input
+,#create-ci-table tr textarea
+,#create-gw-table input
+,#create-gw-table tr textarea
+,#create-cs-table input
+,#create-cs-table tr textarea
+,#create-ot-table input
+,#create-ot-table tr textarea
+,#proposal-process-table input
+,#proposal-process-table tr textarea
+,#agencyform input,#agencyform select
+,.email_form input,.email_form textarea
+,#status_track_ct input, #status_track_ct textarea
+,select{
+    border:none;
+/*    background-color:#ffffff;*/
+    border: 1px solid #A6A8A8;
+    padding: 3px;
+    color:#333333;
+}
+.create-base-table tr td input{
+    width:120px;
+}
+.create-base-table tr td:first-child{
+    width:950px;
+}
+table tr th:first-child,table tr td:nth-child(3){
+    text-align:left;
+}
+#proposal-process-table tr td{
+/*    width:900px;*/
+    padding-right: 5px;
+/*    border: solid;*/
+}
+.create-base-table .wtFuTypeId{
+    /*width:10px;*/
+    width:25px;
+}
+.create-base-table,#proposal-process-table .checkbox_ct{
+    font-size: 10pt;
+    width:800px;
+}
+.create-base-table,#proposal-process-table .checkbox_ct label{
+    padding-right: 20px;
+}
+
+#create-rv-table input
+,#create-rv-table tr textarea
+,#create-gw-table tr textarea
+,#create-ci-table input
+{
+    margin-right: 1px;
+}
+
+#create-gw-table input
+{
+    margin-right: 3px;
+}
+.disabled{
+    opacity: 0.5;
+}
+.lnkbtn{
+    display: block;
+    width: 80px;
+    background-color: #FFFFFF;
+    color:#00517A;
+    /*background-color: lightgrey;*/
+    /*border: 1px solid black;*/
+    border:1px solid #666666;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 5px 0px 5px 0px;
+    border-radius: 3px;
+}
+.lnkbtn:hover{
+    background-color: #0B94C3;
+    color:#FFFFFF;
+    /*background-color: lightblue;*/
+}
+.lnkbtn:visited{
+    color: blue;
+}
+.lnkbtn:active{
+    border: 1px solid red;
+}
+
+/*#######################Reservoir################################*/
+table.targetStorageTb{
+    width:100%;
+    border:1px solid #cccccc;
+  }
+  table.targetStorageTb tr{
+    border-top:1px solid #cccccc;
+    border-bottom:1px solid #cccccc;
+  }
+  table.targetStorageTb th{
+    font-size: 10pt;
+    background-color: #e3e3e3;
+    padding:5px;
+    text-align: left;
+  }
+  table.targetStorageTb td{
+    padding: 5px;
+  }
+  table.targetStorageTb input{
+    width:120px;
+    font-size: 10pt;
+  }
+  table.targetStorageTb input:focus{
+    border:1px solid #a6a8a8 !important;
+  }
+  table.targetStorageTb img{
+    cursor: pointer;
+  }
+
+  .myButton{
+    color: #666666;
+    display: block;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 10px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #ffffff;
+  }
+  .myButton span,#countyList .countyButton span{
+    cursor: pointer;
+    opacity: 0.5;
+  }
+  .myButton span:hover,#countyList .countyButton span:hover{
+    opacity: 1;
+  }
+  .purposeResCt .custom-combobox-input{
+    width:450px;
+  }
+
+/*########################END of Reservoir########################*/
+
+.custom-combobox {
+    font-size: 12px!important;
+}
+#countyList .countyButton{
+  color: #666666;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #ffffff;
+}
+
+#transDescription,#wtComm{
+  width:500px;
+  height:80px;
+}
+.custom-combobox-input{
+  background: white !important;
+}
+
+img.help-icon{
+  width:14px;
+}

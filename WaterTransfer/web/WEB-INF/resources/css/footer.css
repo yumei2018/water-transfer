@@ -1,0 +1,86 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : Jun 8, 2014, 11:52:21 PM
+    Author     : Soi
+*/
+div#footer-ct a
+{
+    text-decoration: none;
+    color:inherit;
+}
+
+div#footer-ct a:hover
+{
+    /*background-color:#1F70A7;*/
+    color:#f9f9f9;
+}
+
+div#footer-ct
+{
+    /*background: linear-gradient(#E7E8E9, #013C59) repeat scroll 0 0 rgba(0, 0, 0, 0);*/
+
+/*    background-image: -moz-linear-gradient(top,  #E7E8E9 5%, #013C59 100%);  FF3.6+
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(5%,#E7E8E9), color-stop(100%,#013C59));  Chrome,Safari4+
+    background-image: -webkit-linear-gradient(top,  #E7E8E9 5%,#013C59 100%);  Chrome10+,Safari5.1+
+    background-image: -o-linear-gradient(top,  #E7E8E9 5%,#013C59 100%);  Opera 11.10+
+    background-image: -ms-linear-gradient(top,  #E7E8E9 5%,#013C59 100%);  IE10+
+    background-image: linear-gradient(#E7E8E9 5%,#013C59 100%);  W3C
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E7E8E9', endColorstr='#013C59',GradientType=0 ); IE6-9 */
+    background-color: rgb(0,91,138);
+    color: #eee;
+    font-size:9pt;
+    height: 90px;
+}
+
+#footer-ct > *{
+  vertical-align: middle;
+  display: inline-block;
+}
+
+#rfooter-wrapper > *,
+#lfooter-wrapper > *{
+  display: inline-block;
+  vertical-align: middle;
+}
+#lfooter-wrapper {
+  width: 69%;
+  padding-left: 1%;
+  padding-right:30px;
+}
+#rfooter-wrapper {
+  width: 25%;
+  padding-right: 10px;
+
+}
+
+#rfooter {
+  float: right;
+  background-image: url('../images/dwrlogo.png');
+  background-size: 66px 66px;
+  background-repeat: no-repeat;
+  height: 66px;
+  width: 66px;
+}
+
+#lfooter {
+  margin: 12px;
+}
+#copyright {
+ padding-top: 25px;
+ cursor: default;
+}
+
+.footer-disclaimer {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.footer-links {
+    text-align: center;
+    font-size: 12px;
+    padding-top: 10px;
+}

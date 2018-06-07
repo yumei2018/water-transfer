@@ -1,0 +1,11 @@
+CREATE USER wt IDENTIFIED BY wt#95670;
+GRANT create session TO wt;
+GRANT create table TO wt;
+GRANT create view TO wt;
+GRANT create any trigger TO wt;
+GRANT create any procedure TO wt;
+GRANT create sequence TO wt;
+GRANT create synonym TO wt;
+GRANT create type TO wt;
+GRANT unlimited tablespace TO wt;
+GRANT READ,WRITE ON DIRECTORY DBDUMP TO wt;

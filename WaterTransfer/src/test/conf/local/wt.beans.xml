@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.1.xsd">
+
+    <bean id="WtDataSource" class="oracle.jdbc.pool.OracleDataSource" destroy-method="close" >
+        <property name="connectionCacheProperties">
+            <value type="java.util.Properties">
+                MaxLimit=30
+                MinLimit=1
+                InitialLimit=1
+                ConnectionWaitTimeout=5
+                ValidateConnection=true
+            </value>
+        </property>
+        <property name="user" value="${wt.username}" />
+        <property name="password" value="${wt.password}" />
+        <property name="uRL" value="${wt.url}" />
+    </bean>
+
+    <bean id="WtEMF" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <property name="persistenceXmlLocation" value="classpath*:META-INF/persistence.xml"/>
+        <property name="persistenceUnitName" value="WaterTransferEJBPU" />
+        <property name="dataSource" ref="WtDataSource" />
+    </bean>
+
+    <bean id="WtTM" class="org.springframework.orm.jpa.JpaTransactionManager" p:entityManagerFactory-ref="WtEMF" />
+
+    <tx:annotation-driven transaction-manager="WtTM" />
+
+    <bean id="AppGroupFacade" class="com.gei.facades.AppGroupFacade" scope="request" />
+    <bean id="AppPermissionFacade" class="com.gei.facades.AppPermissionFacade" scope="request" />
+    <bean id="AppUserFacade" class="com.gei.facades.AppUserFacade" scope="request" />
+    <bean id="UserProfileFacade" class="com.gei.facades.UserProfileFacade" scope="request" />
+    <bean id="UserRegistrationFacade" class="com.gei.facades.UserRegistrationFacade" scope="request" />
+
+    <bean id="WtAddressFacade" class="com.gei.facades.WtAddressFacade" scope="request" />
+    <bean id="WtAgencyFacade" class="com.gei.facades.WtAgencyFacade" scope="request" />
+    <bean id="WtAgencyApprovalFacade" class="com.gei.facades.WtAgencyApprovalFacade" scope="request" />
+    <bean id="WtAttachmentFacade" class="com.gei.facades.WtAttachmentFacade" scope="request" />
+    <bean id="WtAttachmentWithFileFacade" class="com.gei.facades.WtAttachmentWithFileFacade" scope="request" />
+    <bean id="WtBuyerFacade" class="com.gei.facades.WtBuyerFacade" scope="request" />
+    <bean id="WtChangeLogFacade" class="com.gei.facades.WtChangeLogFacade" scope="request" />
+    <bean id="WtChecklistFacade" class="com.gei.facades.WtChecklistFacade" scope="request" />
+    <bean id="WtCiCroptypeFacade" class="com.gei.facades.WtCiCroptypeFacade" scope="request" />
+    <bean id="WtCiMonthlyFacade" class="com.gei.facades.WtCiMonthlyFacade" scope="request" />
+    <bean id="WtCityFacade" class="com.gei.facades.WtCityFacade" scope="request" />
+    <bean id="WtContactFacade" class="com.gei.facades.WtContactFacade" scope="request" />
+    <bean id="WtContactPhoneFacade" class="com.gei.facades.WtContactPhoneFacade" scope="request" />
+    <bean id="WtCountyFacade" class="com.gei.facades.WtCountyFacade" scope="request" />
+    <bean id="WtCropIdlingFacade" class="com.gei.facades.WtCropIdlingFacade" scope="request" />
+    <bean id="WtCropTypeFacade" class="com.gei.facades.WtCropTypeFacade" scope="request" />
+    <bean id="WtFuTypeFacade" class="com.gei.facades.WtFuTypeFacade" scope="request" />
+    <bean id="WtGroundwaterFacade" class="com.gei.facades.WtGroundwaterFacade" scope="request" />
+    <bean id="WtGwMonthlyFacade" class="com.gei.facades.WtGwMonthlyFacade" scope="request" />
+    <bean id="WtInternalNoteFacade" class="com.gei.facades.WtInternalNoteFacade" scope="request" />
+    <bean id="WtPreTransferFacade" class="com.gei.facades.WtPreTransferFacade" scope="request" />
+    <bean id="WtPurposeFacade" class="com.gei.facades.WtPurposeFacade" scope="request" />
+    <bean id="WtLocationFacade" class="com.gei.facades.WtLocationFacade" scope="request" />
+    <bean id="WtMessageFacade" class="com.gei.facades.WtMessageFacade" scope="request" />
+    <bean id="WtReservoirFacade" class="com.gei.facades.WtReservoirFacade" scope="request" />
+    <bean id="WtResponseFacade" class="com.gei.facades.WtResponseFacade" scope="request" />
+    <bean id="WtReviewCommentFacade" class="com.gei.facades.WtReviewCommentFacade" scope="request" />
+    <bean id="WtReviewNoteFacade" class="com.gei.facades.WtReviewNoteFacade" scope="request" />
+    <bean id="WtReviewerCommentsFacade" class="com.gei.facades.WtReviewerCommentsFacade" scope="request" />
+    <bean id="WtRvTarstorFacade" class="com.gei.facades.WtRvTarstorFacade" scope="request" />
+    <bean id="WtStateFacade" class="com.gei.facades.WtStateFacade" scope="request" />
+    <bean id="WtStatusFlagFacade" class="com.gei.facades.WtStatusFlagFacade" scope="request" />
+    <bean id="WtStatusTrackFacade" class="com.gei.facades.WtStatusTrackFacade" scope="request" />
+    <bean id="WtTrackFileFacade" class="com.gei.facades.WtTrackFileFacade" scope="request" />
+    <bean id="WtTransFacade" class="com.gei.facades.WtTransFacade" scope="request" />
+    <bean id="WtTransCeqaFacade" class="com.gei.facades.WtTransCeqaFacade" scope="request" />
+    <bean id="WtTransNepaFacade" class="com.gei.facades.WtTransNepaFacade" scope="request" />
+    <bean id="WtTransReachFacade" class="com.gei.facades.WtTransReachFacade" scope="request" />
+    <bean id="WtTransSwrcbFacade" class="com.gei.facades.WtTransSwrcbFacade" scope="request" />
+    <bean id="WtTransTypeFacade" class="com.gei.facades.WtTransTypeFacade" scope="request" />
+    <bean id="WtTransTrackFacade" class="com.gei.facades.WtTransTrackFacade" scope="request" />
+    <bean id="WtWaterLossFacade" class="com.gei.facades.WtWaterLossFacade" scope="request" />
+    <bean id="WtWaterRightsFacade" class="com.gei.facades.WtWaterRightsFacade" scope="request" />
+    <bean id="WtWellFacade" class="com.gei.facades.WtWellFacade" scope="request" />
+</beans>
